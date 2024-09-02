@@ -1,4 +1,4 @@
-rom flask import Flask, render_template, request, send_file
+from flask import Flask, render_template, request, send_file
 from gtts import gTTS
 from openai import OpenAI
 import os
