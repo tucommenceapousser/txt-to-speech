@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Text to Speech</h1>
+
+        <!-- Explication de l'outil -->
+        <section>
+            <h2>À propos de cet outil</h2>
+            <p>
+                Cet outil en ligne vous permet de convertir du texte en discours grâce à la technologie Text-to-Speech (TTS). 
+                Vous entrez simplement le texte que vous souhaitez transformer en audio, sélectionnez la langue, et donnez un nom au fichier audio généré.
+            </p>
+            <p>
+                <strong>Text-to-Speech (TTS)</strong> est une technologie qui convertit du texte écrit en discours audio. Elle est particulièrement utile pour rendre le contenu accessible à ceux qui préfèrent écouter plutôt que lire.
+            </p>
+            <p>
+                En combinaison avec <strong>GPT-4</strong>, un modèle avancé de génération de texte développé par OpenAI, vous pouvez obtenir des réponses et du contenu textuel générés automatiquement avant de le convertir en audio. GPT-4 est capable de comprendre et de générer du texte de manière contextuelle et précise.
+            </p>
+            <p>
+                Pour utiliser cet outil :
+                <ul>
+                    <li><strong>Texte :</strong> Saisissez le texte que vous souhaitez convertir en discours.</li>
+                    <li><strong>Langue :</strong> Indiquez la langue dans laquelle vous souhaitez que le texte soit lu.</li>
+                    <li><strong>Nom du fichier :</strong> Donnez un nom à votre fichier audio MP3.</li>
+                    <li><strong>Générer MP3 :</strong> Cliquez sur ce bouton pour lancer la conversion et obtenir votre fichier audio.</li>
+                </ul>
+            </p>
+        </section>
+
+        <form action="/" method="post">
+            <label for="text">Texte :</label>
+            <textarea id="text" name="text" required></textarea>
+
+            <label for="language">Langue :</label>
+            <input type="text" id="language" name="language" required>
+
+            <label for="name">Nom du fichier :</label>
+            <input type="text" id="name" name="name" required>
+
+            <button type="submit">Générer MP3</button>
+        </form>
+    </div>
+</body>
+</html>
