@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, send_file
 from gtts import gTTS
 import os
-from dotenv import load_dotenv
 from openai import OpenAI
 
 # Charger les variables d'environnement depuis le fichier .env
