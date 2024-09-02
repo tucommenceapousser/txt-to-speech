@@ -1,0 +1,103 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000000; /* Fond noir pour un contraste élevé */
+  color: #f5f5f5; /* Texte clair pour contraster avec le fond noir */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #333333; /* Fond gris foncé pour les sections */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(255, 165, 0, 0.5); /* Ombre orange fluo */
+  border: 2px solid #ff5722; /* Bordure orange fluo */
+}
+
+h1 {
+  color: #ff5722; /* Orange fluo pour le titre */
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(255, 87, 34, 0.8); /* Ombre orange fluo */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #00bcd4; /* Bleu fluo pour les labels */
+}
+
+textarea, input[type="text"] {
+  padding: 12px;
+  margin-top: 8px;
+  border: 2px solid #ff5722; /* Bordure orange fluo */
+  border-radius: 6px;
+  font-size: 1em;
+  background-color: #212121; /* Fond sombre pour les champs de texte */
+  color: #f5f5f5; /* Texte clair dans les champs de texte */
+  transition: border-color 0.3s ease; /* Transition douce pour le focus */
+}
+
+textarea:focus, input[type="text"]:focus {
+  border-color: #00bcd4; /* Bordure bleue fluo au focus */
+  outline: none;
+}
+
+button {
+  margin-top: 25px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f44336; /* Rouge flashy pour le bouton */
+  color: #ffffff;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition douce pour le survol */
+}
+
+button:hover {
+  background-color: #ff5722; /* Orange fluo au survol */
+  transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+/* Style pour la section d'explications */
+section {
+  background: #444444; /* Fond légèrement plus clair que le conteneur principal pour faire ressortir la section */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 2px solid #ff5722; /* Bordure orange fluo pour correspondre au thème */
+}
+
+h2 {
+  color: #ff5722; /* Orange fluo pour le sous-titre */
+  font-size: 2em;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 3px rgba(255, 87, 34, 0.8); /* Ombre orange fluo légère */
+}
+
+p {
+  line-height: 1.6; /* Améliore la lisibilité du texte */
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 20px; /* Indentation pour les listes */
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+strong {
+  color: #00bcd4; /* Bleu fluo pour les éléments importants */
+}
