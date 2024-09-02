@@ -1,17 +1,10 @@
 from flask import Flask, render_template, request, send_file
 from gtts import gTTS
-import os
 from openai import OpenAI
-
-# Charger les variables d'environnement depuis le fichier .env
-load_dotenv()
+import os
 
 app = Flask(__name__)
-# Récupérer la clé API depuis les variables d'environnement
-api_key = os.getenv('OPENAI_APIKEY')
-
-# Initialiser le client OpenAI avec la clé API
-client = OpenAI(api_key=api_key)
+client = OpenAI(api_key='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')
 
 def correct_text_with_gpt4(text):
     """Corrige le texte avec GPT-4 pour les erreurs d'orthographe et de grammaire."""
